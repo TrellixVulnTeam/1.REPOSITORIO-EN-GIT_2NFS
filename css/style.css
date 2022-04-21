@@ -1,16 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;    
+    box-sizing: border-box; 
+       
+}
+
+h3 {
+    color: black;
 }
 
 .bodyi {
-    background-color: black;
+    background-color:  #BE8C63;
     display: flex;
     font-size: 15px;    
 }
 
-/*TEXTO MODIFICADO*/
+a {
+    font-size: 16px; 
+}
+h5 {
+    display: flex;
+    justify-content: center;
+}
+
+/*TEXTO MODIFICADO
 html {
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
@@ -22,7 +35,7 @@ html {
     justify-content: center;       
 }
 
-/*TEXTO BARRA DE NAVEGACION IZQUIERDA  DE VERTICAL A HORIZONTAL CON FLEX BOX*/
+TEXTO BARRA DE NAVEGACION IZQUIERDA  DE VERTICAL A HORIZONTAL CON FLEX BOX
 
 .Nav_izq, ul {
     display: flex;
@@ -31,14 +44,14 @@ html {
     align-items: flex-start;   
 }
 
-/*SOMBRA AL TEXTO DEL NAVEGADOR IZQUIERDA */
+SOMBRA AL TEXTO DEL NAVEGADOR IZQUIERDA 
 
 .Nav_izq_texto:hover {
     box-shadow: 0 0.3rem 0.4rem aqua;
     color: aqua;    
 }
 
-/*IMAGEN DE LICORES BANER DE JACK DANIELS Y OTRAS*/
+IMAGEN DE LICORES BANER DE JACK DANIELS Y OTRAS
 .baner_leyenda {
     display: flex;
     justify-content: center;
@@ -53,7 +66,7 @@ html {
     text-align: center;
 }
 
-/*TEXTO DE LOS NAVS */
+TEXTO DE LOS NAVS
 a {
     color: white;
     text-decoration: none;
@@ -61,8 +74,8 @@ a {
     font-size: 25px;    
 }
 
-/*QUIENES SOMOS O LA MI
-SION DE LA EMPRESA*/
+QUIENES SOMOS O LA MI
+SION DE LA EMPRESA
 
 .Mision {
     background-color: #BE8C63;
@@ -107,7 +120,7 @@ SION DE LA EMPRESA*/
 }
 
 
-/*COLOR DE FONDO PARA EL FOOTER,REDES SOCIALES, OPCIONES*/
+/*COLOR DE FONDO PARA EL FOOTER,REDES SOCIALES, OPCIONES
 .Footer_derechos,.footer_2022 {
     background-color: black;
     color: white;
@@ -118,7 +131,7 @@ SION DE LA EMPRESA*/
     text-align: center;
     flex-direction:column;
     
-}
+}*/
 
 /*CAJAS CONTENEDORAS DE IMPUTS*/
 /*CAJA CONTENEDORA DE CONTACTENOS*/
@@ -166,7 +179,6 @@ SION DE LA EMPRESA*/
     padding: 30px;
     font-weight: bold;
 
-    
 }
 
 /*IMPUTS DE CONTACTENOS*/
@@ -285,15 +297,10 @@ iframe {
     align-items: center;
 }
 
-
-
 /*aANIMACIONES PARA LAS CAJAS CONTENEDORAS DE LICORES, CERVEZAS Y OFERTAS*/
 .texto_div:hover {
     transform: scale(1.1);
 }
-
-
-
 
  /*TEXTO DE LA CAJA DE LOS DIVS DE LICORES,CERVEZAS Y OFERTAS*/
 .texto_div {
