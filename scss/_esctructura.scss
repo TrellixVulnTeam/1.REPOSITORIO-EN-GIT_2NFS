@@ -1,0 +1,52 @@
+.bodyi {
+    background-color: white;
+    display: flex;
+    font-size: 15px;
+       
+}
+
+/*ANIDAMIENTO*/
+html {
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    color: white;   
+header {
+    background-image: url(../imagenes/vinoenmano.png);
+    background-color: black;
+    background-size:  cover;
+    .imgelogo {
+        display:block;
+        justify-content: center; 
+        width: 20%;
+        align-items: end;
+        padding: 20px;  
+    }
+}
+}
+
+
+.d-flex {
+    margin: 2%;
+    
+}
+/*TEXTO BARRA DE NAVEGACION IZQUIERDA  DE VERTICAL A HORIZONTAL CON FLEX BOX*/
+
+li {
+    display: flex;
+    list-style: none;
+    justify-content:space-around;
+    align-items: flex-start;
+    .nav-link:hover {
+        box-shadow: 0 0.3rem 0.4rem aqua;
+        color: aqua;    
+    }   
+}
+
+
+/*TEXTO DE LOS NAVS */
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 25px;    
+}
