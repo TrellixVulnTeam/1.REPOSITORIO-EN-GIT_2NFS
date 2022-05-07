@@ -1,0 +1,84 @@
+/*----------------------------------------------MEDIA QUERIES--------------------------------------------*/
+
+.bodyi {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "seccion"
+    "footer";   
+}
+
+@media only screen and (max-width:1200px){
+    .bodyi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "seccion"
+        "footer";
+}
+}
+
+@media only screen and (max-width:1024px){
+    .bodyi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "seccion"
+        "footer";
+}
+}
+@media only screen and (max-width:768px){
+    .bodyi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "seccion"
+        "footer";    
+    }
+    .imgatenas {
+        height: 65px;
+        display: flex;
+        justify-content: center;
+        text-align: center; 
+        align-items: center;
+    }
+    
+}
+@media only screen and (max-width:600px){
+    .bodyi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "seccion"
+        "footer";
+}
+}
+
+
+@media only screen and (max-width:480px){
+    .bodyi {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header"
+        "seccion"
+        "footer";
+    }
+    .imgatenas {
+        height: 35px;
+        width: 55px;
+}
+        
+    }
+
+    @media only screen and (max-width:320px){
+        .bodyi {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+            "header"
+            "seccion"
+            "footer";
+        }
+        .baner_leyenda {
+            width: 100%;
+        }
+    }

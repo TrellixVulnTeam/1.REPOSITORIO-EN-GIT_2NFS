@@ -1,35 +1,56 @@
-.bodyi {
-    background-color: white;
+
+
+/*------------- CAMBIOS EN SASS EN LA ESCTRUCTURA DEL PROYECTO-------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    .bodyi {
+    background-color: var(--color-terciario);
     display: flex;
     font-size: 15px;
-       
-}
+   }    
+  }
 
-/*ANIDAMIENTO*/
+/*---------------------------------ANIDAMIENTO ESTRUCTURA------------------------------------------------*/
+
+/*---------------------------------OPERADORES +-/*-------------------------------------------------------*/
+
+$ancho: 20%;
+$relleno: 20px;
+$relleno2: 10px;
+$margen: 10px;
+
 html {
     font-family: 'Josefin Slab', serif;
     font-size: 20px;
-    color: white;   
+    color: var(--color-terciario);   
 header {
-    background-image: url(../imagenes/vinoenmano.png);
-    background-color: black;
+    background-color: var(--color-principal);
     background-size:  cover;
     .imgelogo {
         display:block;
         justify-content: center; 
-        width: 20%;
+        width: $ancho;
         align-items: end;
-        padding: 20px;  
+        padding: $relleno; 
+       }
+      }
+     }
+ /*---------------------------------SECCION DEL PROYECTO-------------------------------------------------*/    
+.seccion {
+    background-color: var(--color-secundario);
+    .texto100_centrado {
+        display: flex;
+        justify-content: center;
+        padding: $relleno2;
+              
+       }
+      }
+      .contenedor_header {
+        background-image: url(../imagenes/cavas.png);  
     }
-}
-}
-
-
-.d-flex {
-    margin: 2%;
-    
-}
-/*TEXTO BARRA DE NAVEGACION IZQUIERDA  DE VERTICAL A HORIZONTAL CON FLEX BOX*/
+/*-------------------------------------------TEXTO DE LOS NAVS---------------------------------------------*/
 
 li {
     display: flex;
@@ -37,16 +58,21 @@ li {
     justify-content:space-around;
     align-items: flex-start;
     .nav-link:hover {
-        box-shadow: 0 0.3rem 0.4rem aqua;
-        color: aqua;    
-    }   
-}
-
-
-/*TEXTO DE LOS NAVS */
-a {
-    color: white;
+        box-shadow: 0 0.3rem 0.4rem var(--color-cuarto);
+        color: var(--color-cuarto);       
+    }  
+   }
+   a {
+    color: var(--color-terciario);
     text-decoration: none;
     margin: 10px;
-    font-size: 25px;    
-}
+    font-size: 16px;    
+   } 
+/*----------------------------------------EXTENDS--------------------------------------------------------*/
+   .nav-link-hover {
+       @extend .nav-link-hover;
+       background-color: red;
+
+   }
+
+
