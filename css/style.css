@@ -7870,13 +7870,13 @@ a {
 /*---------------------------------------------VARAIBLES---------------------------------------------------*/
 :root {
   --color-principal: #060100;
-  --color-secundario: #DAB88B;
+  --color-secundario: #524A4E;
   --color-terciario: #FCFBFB;
-  --color-cuarto: #00ffff; }
+  --color-cuarto: #E83A14; }
 
 /*--------------------------------------------REDES SOCIAL Y FOOTER--------------------------------------*/
 footer {
-  background-color: var(--color-secundario); }
+  background-color: #D1D1D1; }
   footer .redes_sociales {
     width: 20px;
     height: 20px; }
@@ -7925,7 +7925,9 @@ footer {
     grid-template-columns: 1fr;
     grid-template-areas: "header" "seccion" "footer"; }
   .baner_leyenda {
-    width: 100%; } }
+    width: 100%; }
+  .seccion {
+    font-size: 1%; } }
 
 /*-----------------------------CAMBIOS A LA CAJA DE CONTACTENOS Y CAJA DE ENVIOS-------------------------*/
 .container_envios {
