@@ -7870,13 +7870,13 @@ a {
 /*---------------------------------------------VARAIBLES---------------------------------------------------*/
 :root {
   --color-principal: #060100;
-  --color-secundario: #524A4E;
+  --color-secundario: #99C4C8;
   --color-terciario: #FCFBFB;
-  --color-cuarto: #E83A14; }
+  --color-cuarto: #99C4C8; }
 
 /*--------------------------------------------REDES SOCIAL Y FOOTER--------------------------------------*/
 footer {
-  background-color: #D1D1D1; }
+  background-color: var(--color-secundario); }
   footer .redes_sociales {
     width: 20px;
     height: 20px; }
