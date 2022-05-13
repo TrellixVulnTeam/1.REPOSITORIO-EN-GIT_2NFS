@@ -7882,52 +7882,42 @@ footer {
     height: 20px; }
 
 /*----------------------------------------------MEDIA QUERIES--------------------------------------------*/
+/* ----------------------------- inicio de grid ----------------------------- */
 .bodyi {
   display: grid;
-  grid-template-areas: "header" "seccion" "footer"; }
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "contentIndex" "footerIndex "; }
 
-@media only screen and (max-width: 1200px) {
-  .bodyi {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "seccion" "footer"; } }
+.contenedor_header {
+  grid-area: header; }
 
-@media only screen and (max-width: 1024px) {
-  .bodyi {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "seccion" "footer"; } }
+.seccion {
+  grid-area: contentIndex; }
+
+.footerIndex {
+  grid-area: footerIndex; }
 
 @media only screen and (max-width: 768px) {
   .bodyi {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "seccion" "footer"; }
-  .imgatenas {
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center; } }
-
-@media only screen and (max-width: 600px) {
-  .bodyi {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "seccion" "footer"; } }
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header header header" "contentIndex contentIndex contentIndex" "footerIndex footerIndex footerIndex"; } }
 
 @media only screen and (max-width: 480px) {
   .bodyi {
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "seccion" "footer"; }
-  .imgatenas {
-    height: 35px;
-    width: 55px; } }
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "contentIndex contentIndex" "contentIndex contentIndex" "footerIndex footerIndex"; } }
 
 @media only screen and (max-width: 320px) {
   .bodyi {
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "seccion" "footer"; }
-  .baner_leyenda {
-    width: 100%; }
+    grid-template-areas: "header" "contentIndex" "footerIndex"; }
+  .contenedor_header {
+    width: 95%; }
   .seccion {
-    font-size: 1%; } }
+    width: 95%; }
+  .footerIndex {
+    width: 95%; } }
 
 /*-----------------------------CAMBIOS A LA CAJA DE CONTACTENOS Y CAJA DE ENVIOS-------------------------*/
 .container_envios {
